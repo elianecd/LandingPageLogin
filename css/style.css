@@ -1,0 +1,303 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{ /* pagina toda */
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: auto; /*torna o container responsivo*/
+}
+
+.form{ /* quadrado branco do formulario */
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+    box-sizing: border-box;
+    height: auto; /*torna o quadrado responsivo*/
+    margin: auto; /*torna o quadrado responsivo*/
+}
+
+.forms.show-signup .form.signup {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.forms.show-signup .form.login {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header{ /* login */
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    margin-top: 30px;
+}
+
+.form .field{ /* quadrado do google */
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field input, /* quadrados do usuario e senha */
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input{ /* bordas dos quadrados do usuario e senha */
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#cacaca;
+}
+
+.field input:focus{
+    border-bottom-width: 2px;
+}
+
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.field button{
+    color: #FFF;
+    background-color: #016dcb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover{
+    color: #000000;
+    background-color: #ffc000;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form a{
+    text-decoration: none;
+}
+
+.form-content a:hover{
+    color: #0171d3;
+    text-decoration: underline;
+}
+
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+
+.line::before{
+    content: 'Ou';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+a.google{
+    border: 1px solid #cacaca;
+}
+
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
+
+.custom-dropdown {
+    width: 100%;
+    position: relative;
+}
+
+.custom-dropdown select {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #777777;
+}
+
+.custom-dropdown select:focus {
+    border-color: #0171d3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #000000;
+}
+
+/* espaço entre os dropdowns */
+.custom-dropdown + .custom-dropdown {
+    margin-top: 20px;
+}
+
+h5{
+    color: #777777;
+    text-align: -webkit-auto;
+}
+
+.cancel-button {
+    color: #FFF;
+    background-color: #016dcb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cancel-button:hover {
+    color: #000000;
+    background-color: #ffc000;
+    text-decoration: none;
+}
+
+.field input[type="date"] {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 10px; /* Adjust the padding to your preference */
+    border: 1px solid #cacaca;
+    border-radius: 6px;
+    outline: none;
+    background-color: #FFF;
+    color: #777777;
+    margin: auto; /* Center the input in the field */
+    
+}
+
+.field input[type="date"]:focus {
+    border-color: #0171d3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #000000;
+}
+
+/* para tela responsiva */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form {
+        max-width: 100%;
+        padding: 15px;
+        overflow: auto;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .field input,
+    .field select,
+    .field button {
+        width: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        margin: auto;
+    }
+
+    .cancel-button {
+        padding: 12px;
+        display:block;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+  

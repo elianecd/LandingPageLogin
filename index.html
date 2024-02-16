@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en, pt"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<style>
+body{
+    background-image:url('images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Set the body to take the full viewport height */
+    width: 100%;
+}
+</style>
+
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Usuário" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Senha" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Esqueceu a senha?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Entrar</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Não tem conta? <a href="signup.html" class="link signup-link">Cadastre-se.</a></span>
+                </div>
+
+            </div>
+            
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="https://www.bing.com/ck/a?!&&p=6277012b45033299JmltdHM9MTcwNzk1NTIwMCZpZ3VpZD0wMWUyZjJhZS03ZGE5LTY1MGMtMDk1NC1lMTQ5N2NiZDY0ZTQmaW5zaWQ9NTQ1MQ&ptn=3&ver=2&hsh=3&fclid=01e2f2ae-7da9-650c-0954-e1497cbd64e4&psq=google+login+page&u=a1aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL0xvZ2luP2hsPWVuLUdC&ntb=1" class="field google">
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span style="color: #000000;">Login com Google</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
